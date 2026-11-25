@@ -1,0 +1,25 @@
+{
+    "name": "sparkable/magento-mago-attribute-sets",
+    "description": "Mago Assistant tool that reads and rearranges the groups and attributes of a product attribute set",
+    "type": "magento2-module",
+    "license": "MIT",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.3",
+        "mago-assistant/magento2-mago": "^1.1",
+        "magento/framework": "*",
+        "magento/module-catalog": "*",
+        "magento/module-eav": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Sparkable\\MagoAttributeSets\\": ""
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

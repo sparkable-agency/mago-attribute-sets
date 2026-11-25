@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="MagoAssistant\Mago\Service\Tool\ToolRegistry">
+        <arguments>
+            <argument name="tools" xsi:type="array">
+                <item name="sparkable_attribute_sets" xsi:type="object">Sparkable\MagoAttributeSets\Service\Tool\AttributeSets</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Sparkable\MagoAttributeSets\Service\Tool\AttributeSets">
+        <arguments>
+            <argument name="actions" xsi:type="array">
+                <item name="get_layout" xsi:type="object">Sparkable\MagoAttributeSets\Service\Tool\AttributeSets\GetLayoutAction</item>
+                <item name="arrange" xsi:type="object">Sparkable\MagoAttributeSets\Service\Tool\AttributeSets\ArrangeAction</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
