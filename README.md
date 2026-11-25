@@ -14,14 +14,13 @@ Example questions:
 
 ## Installation
 
+The package is on Packagist: [sparkable/magento-mago-attribute-sets](https://packagist.org/packages/sparkable/magento-mago-attribute-sets).
+
 ```
-composer config repositories.sparkable-mago-attribute-sets vcs https://github.com/sparkable-agency/mago-attribute-sets
 composer require sparkable/magento-mago-attribute-sets
 bin/magento module:enable Sparkable_MagoAttributeSets
 bin/magento setup:upgrade
 ```
-
-The `composer config` line adds the GitHub repository of this package.
 
 ## How a write works
 
