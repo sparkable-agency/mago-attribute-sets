@@ -1,6 +1,6 @@
 # Mago Attribute Sets
 
-A tool for the [Mago](https://github.com/mago-assistant/magento2-mago) admin assistant. It reads and rearranges a product attribute set. The attribute set controls the order of the fields on the product edit page.
+A tool for the [Mago](https://packagist.org/packages/mago-assistant/magento2-mago) admin assistant. It reads and rearranges a product attribute set. The attribute set controls the order of the fields on the product edit page.
 
 | Action | What it does |
 | --- | --- |
@@ -15,10 +15,13 @@ Example questions:
 ## Installation
 
 ```
+composer config repositories.sparkable-mago-attribute-sets vcs https://github.com/sparkable-agency/mago-attribute-sets
 composer require sparkable/magento-mago-attribute-sets
 bin/magento module:enable Sparkable_MagoAttributeSets
 bin/magento setup:upgrade
 ```
+
+The `composer config` line adds the GitHub repository of this package.
 
 ## How a write works
 
